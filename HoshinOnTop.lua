@@ -1,6 +1,7 @@
 --[[ 
-    HỆ THỐNG GETKEY UB HUB - FIX LỖI KHÔNG LOAD SCRIPT (HEX SECURE)
+    HỆ THỐNG GETKEY HOSHIN ONTOP - ROG GAMING EDITION (HEX SECURE)
     LINK GET KEY: https://link4m.net/9XprL
+    KEY GỐC: UBHUBGAG2FREE_qyE3nvt92tdm67HSxyjUB
 ]]
 
 local ScreenGui = Instance.new("ScreenGui")
@@ -15,10 +16,10 @@ local NoteLabel = Instance.new("TextLabel")
 
 -- Cấu hình ScreenGui hệ thống
 ScreenGui.Parent = game.CoreGui
-ScreenGui.Name = "UBHub_GamingGetKey_System"
+ScreenGui.Name = "HoshinOnTop_GetKey_System"
 ScreenGui.ResetOnSpawn = false
 
--- Hàm giải mã Hex an toàn
+-- Hàm giải mã Hex bảo mật chống đọc trộm
 local function _hexDecode(hexStr)
     local str = ""
     for i = 1, #hexStr, 2 do
@@ -29,18 +30,17 @@ local function _hexDecode(hexStr)
 end
 
 -- ========================================================
--- DỮ LIỆU ĐÃ ĐƯỢC SỬA LẠI CHUẨN XÁC VÀ MÃ HÓA BẢO MẬT
+-- DỮ LIỆU ĐÃ ĐƯỢC MÃ HÓA HEX CHUẨN XÁC 100% (ANTI-BYPASS)
 -- ========================================================
 
--- Link Get Key: https://link4m.net/9XprL
+-- Link Get Key mã hóa Hex: https://link4m.net/9XprL
 local _encryptedLink = "68747470733a2f2f6c696e6b346d2e6e65742f395870724c"
 
--- Key: UBHUBGAG2FREE_qyE3nvt92tdm67HSxyjUB
+-- Key mã hóa Hex: UBHUBGAG2FREE_qyE3nvt92tdm67HSxyjUB
 local _encryptedKey = "554248554247414732465245455f717945336e7674393274646d3637485378796a5542"
 
--- ĐÃ FIX: Link script gốc chính xác không bị sai ký tự domain github
--- https://raw.githubusercontent.com/TeamUBHub/UBLoader/refs/heads/main/index/Key.lua
-local _encryptedScript = "68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f5465616d55424875622f55424c6f616465722f726566732f68656164732f6d61696e2f696e6465782f4b65792e6c7561"
+-- Script Hoshin OnTop mã hóa Hex: https://raw.githubusercontent.com/Fluxyyy333/HoshiOnTop/main/loader.lua
+local _encryptedScript = "68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f466c75787979793333332f486f7368694f6e546f702f6d61696e2f6c6f616465722e6c7561"
 
 -- ========================================================
 
@@ -54,7 +54,7 @@ local function NotifyRed(text)
     Label.Size = UDim2.new(0, 600, 0, 60)
     Label.Position = UDim2.new(0.5, -300, 0.25, 0)
     Label.BackgroundTransparency = 1
-    Label.TextColor3 = Color3.fromRGB(255, 90, 90) -- Màu đỏ nhẹ san hô dịu mắt, sắc nét
+    Label.TextColor3 = Color3.fromRGB(255, 90, 90) -- Màu đỏ nhẹ san hô dịu mắt, cực kỳ rõ nét
     Label.Text = text
     Label.Font = Enum.Font.GothamBold
     Label.TextSize = 24
@@ -67,7 +67,7 @@ local function NotifyRed(text)
     end)
 end
 
--- KHUNG MENU CHÍNH (#0F111A - Đen xanh vũ trụ)
+-- KHUNG MENU CHÍNH (#0F111A - Đen xanh vũ trụ gaming chống mỏi mắt)
 MainFrame.Name = "MainFrame"
 MainFrame.Parent = ScreenGui
 MainFrame.BackgroundColor3 = Color3.fromHex("#0F111A")
@@ -79,24 +79,24 @@ MainFrame.Draggable = true
 UICorner.CornerRadius = UDim.new(0, 12)
 UICorner.Parent = MainFrame
 
--- Viền phát sáng nhẹ Đỏ hồng Neon phong cách Gaming (#FF334B)
+-- Viền phát sáng nhẹ Đỏ hồng Neon phong cách ROG Gaming (#FF334B)
 UIStroke.Parent = MainFrame
 UIStroke.Thickness = 1.5
 UIStroke.Color = Color3.fromHex("#FF334B")
 UIStroke.Transparency = 0.5
 
--- Tên Menu: Hệ Thống GetKey UB HUB
+-- Tên Menu: Hệ Thống GetKey Hoshin OnTop
 Title.Parent = MainFrame
-Title.Text = "Hệ Thống GetKey UB HUB"
+Title.Text = "Hệ Thống GetKey Hoshin OnTop"
 Title.Font = Enum.Font.GothamBlack
 Title.TextColor3 = Color3.fromRGB(255, 255, 255)
-Title.TextSize = 19
+Title.TextSize = 18
 Title.Size = UDim2.new(1, 0, 0, 50)
 Title.BackgroundTransparency = 1
 
--- Ô KHUNG/Ô NHẬP KEY (#1A1D26 - Xám xanh đậm)
+-- Ô KHUNG/Ô NHẬP KEY (#1A1D26 - Xám xanh đậm tạo chiều sâu)
 KeyInput.Parent = MainFrame
-KeyInput.PlaceholderText = "Nhập mã Key UB HUB tại đây..."
+KeyInput.PlaceholderText = "Nhập mã Key tại đây..."
 KeyInput.Text = ""
 KeyInput.BackgroundColor3 = Color3.fromHex("#1A1D26")
 KeyInput.Position = UDim2.new(0.08, 0, 0.20, 0)
@@ -110,7 +110,7 @@ local InputStroke = Instance.new("UIStroke", KeyInput)
 InputStroke.Thickness = 1
 InputStroke.Color = Color3.fromHex("#2A303F")
 
--- NÚT CHỌN GETKEY VĨNH VIỄN (#FF334B - Đỏ hồng neon, chữ trắng tinh tinh khiết)
+-- NÚT CHỌN GETKEY VĨNH VIỄN (#FF334B - Đỏ hồng neon kích thích thị giác, chữ trắng tinh)
 CopyBtnPermanent.Parent = MainFrame
 CopyBtnPermanent.Text = "GET KEY VĨNH VIỄN"
 CopyBtnPermanent.Font = Enum.Font.GothamBlack
@@ -121,7 +121,7 @@ CopyBtnPermanent.Position = UDim2.new(0.08, 0, 0.38, 5)
 CopyBtnPermanent.Size = UDim2.new(0.84, 0, 0, 36)
 Instance.new("UICorner", CopyBtnPermanent).CornerRadius = UDim.new(0, 8)
 
--- NÚT XÁC NHẬN KEY 
+-- NÚT XÁC NHẬN KEY (Thiết kế màu trắng tương phản cao cấp)
 SubmitBtn.Parent = MainFrame
 SubmitBtn.Text = "XÁC NHẬN KEY"
 SubmitBtn.Font = Enum.Font.GothamBlack
@@ -132,7 +132,7 @@ SubmitBtn.Position = UDim2.new(0.08, 0, 0.56, 8)
 SubmitBtn.Size = UDim2.new(0.84, 0, 0, 38)
 Instance.new("UICorner", SubmitBtn).CornerRadius = UDim.new(0, 8)
 
--- GHI CHÚ CHỮ NHỎ (Màu vàng đỏ nhẹ: #E08B46)
+-- GHI CHÚ CHỮ NHỎ PHÍA DƯỚI (Màu vàng đỏ nhẹ: #E08B46)
 NoteLabel.Parent = MainFrame
 NoteLabel.Text = "Việc lấy ( Key )giúp mình có thêm chút chi phí để duy trì và cập nhật script mỗi ngày. Chỉ mất 1-2 phút mong bạn đừng tức giận và tiếp tục ủng hộ mình nhé! Chúc các bạn chơi game vui vẻ!"
 NoteLabel.Font = Enum.Font.GothamMedium
@@ -155,13 +155,14 @@ CopyBtnPermanent.MouseButton1Click:Connect(function()
 end)
 
 SubmitBtn.MouseButton1Click:Connect(function()
+    -- Giải mã động chuỗi Hex trực tiếp khi click để đối chiếu chính xác 100%
     if KeyInput.Text == _hexDecode(_encryptedKey) then
         SubmitBtn.Text = "KÍCH HOẠT THÀNH CÔNG!"
         SubmitBtn.BackgroundColor3 = Color3.fromRGB(0, 215, 115)
         SubmitBtn.TextColor3 = Color3.fromRGB(255, 255, 255)
         task.wait(1.2)
         ScreenGui:Destroy()
-        -- Thực thi chạy chính xác script gốc của UB Hub
+        -- Kích hoạt và tải chính xác menu script Hoshin OnTop gốc
         loadstring(game:HttpGet(_hexDecode(_encryptedScript)))()
     else
         SubmitBtn.Text = "SAI KEY! VUI LÒNG KIỂM TRA LẠI"

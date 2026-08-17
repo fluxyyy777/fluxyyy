@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoshin Hub - Trang Nhận Key Official</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Family -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #05020a;
+            background-image: 
+                radial-gradient(at 0% 0%, rgba(147, 51, 234, 0.18) 0px, transparent 50%),
+                radial-gradient(at 100% 100%, rgba(6, 182, 212, 0.18) 0px, transparent 50%),
+                radial-gradient(at 50% 50%, rgba(236, 72, 153, 0.12) 0px, transparent 50%);
+        }
+
+        /* Viền Neon phát sáng giống giao diện Hoshin Hub */
+        .neon-card {
+            position: relative;
+            background: #0d091a;
+            border-radius: 28px;
+        }
+
+        .neon-card::before {
+            content: '';
+            position: absolute;
+            inset: -3px;
+            border-radius: 30px;
+            background: linear-gradient(135deg, #f59e0b, #ec4899, #8b5cf6, #06b6d4, #f59e0b);
+            background-size: 300% 300%;
+            z-index: -1;
+            animation: moveGradient 6s ease infinite;
+            box-shadow: 0 0 25px rgba(245, 158, 11, 0.4),
+                        0 0 45px rgba(236, 72, 153, 0.25);
+        }
+
+        @keyframes moveGradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .pulse-glow {
+            animation: pulseGlow 2s infinite;
+        }
+
+        @keyframes pulseGlow {
+            0%, 100% { opacity: 1; filter: drop-shadow(0 0 10px rgba(6, 182, 212, 0.6)); }
+            50% { opacity: 0.8; filter: drop-shadow(0 0 20px rgba(236, 72, 153, 0.8)); }
+        }
+    </style>
+</head>
+<body class="min-h-screen text-slate-100 flex items-center justify-center p-4">
+
+    <!-- Card Chính -->
+    <div class="w-full max-w-md neon-card p-6 sm:p-7 shadow-2xl my-auto">
+        
+        <!-- Header Logo & Title -->
+        <div class="flex flex-col items-center text-center">
+            <!-- Icon Logo Hub -->
+            <div class="relative group mb-3">
+                <div class="w-20 h-20 rounded-full bg-gradient-to-tr from-cyan-400 via-indigo-500 to-pink-500 p-1 flex items-center justify-center shadow-lg shadow-cyan-500/30">
+                    <div class="w-full h-full bg-[#0d091a] rounded-full flex items-center justify-center">
+                        <svg class="w-10 h-10 text-cyan-400 pulse-glow" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M21 6H3c-1.1 0-2 .9-2 2v8c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-10 7H9v2H7v-2H5v-2h2V9h2v2h2v2zm4.5 1c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm3-3c-.83 0-1.5-.67-1.5-1.5S17.67 9 18.5 9s1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+            <h1 class="text-3xl font-extrabold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 via-purple-300 to-pink-400">
+                Hoshin Hub
+            </h1>
+            <p class="text-cyan-400 text-sm font-semibold tracking-wide mt-1">
+                script:Hoshin
+            </p>
+            <span class="mt-2 bg-emerald-500/10 text-emerald-400 border border-emerald-500/30 text-[11px] font-bold px-3 py-1 rounded-full flex items-center gap-1.5">
+                <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+                Hệ Thống Lấy Key Tự Động
+            </span>
+        </div>
+
+        <!-- Thông Tin Chi Tiết Về Key -->
+        <div class="mt-6 space-y-2.5">
+            <div class="bg-[#140f28]/90 border border-purple-900/40 rounded-xl p-3 flex items-center justify-between text-xs">
+                <span class="text-slate-300 font-medium flex items-center gap-2">
+                    <svg class="w-4 h-4 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 7a2 2 0 012 2m4 0a6 6 0 01-7.743 5.743L11 17H9v2H7v2H4a1 1 0 01-1-1v-2.586a1 1 0 01.293-.707l5.964-5.964A6 6 0 0121 9z"/>
+                    </svg>
+                    Trạng Thái Key:
+                </span>
+                <span class="text-emerald-400 font-bold bg-emerald-400/10 px-2.5 py-0.5 rounded-md border border-emerald-400/20">
+                    Sẵn Sàng
+                </span>
+            </div>
+
+            <div class="grid grid-cols-2 gap-2 text-xs">
+                <div class="bg-[#140f28]/90 border border-emerald-900/40 rounded-xl p-3 flex flex-col gap-1">
+                    <span 
